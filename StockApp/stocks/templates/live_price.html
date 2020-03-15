@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Live Stock Price{% endblock %}
+
+{% block body %}
+	<div>
+		<form class="form-inline" action="/" method="get">
+			<div class="form-group">
+				<input type="text" name="ticker" placeholder="Stock Ticker" class="form-control mb-2 mr-sm-2" {% if ticker is not none %}value="{{ ticker }}"{% endif %} />
+				<button class="btn btn-primary mb-2">Submit</button>
+			</div>
+		</form>
+		{% if ticker is not none %}
+			{% if open_price is none or close_price is none or realtime_price is none %}
+			<div class="alert alert-danger" role="alert">Couldn't retrieve data for ticker {{ ticker }}!</div>
+			{% else %}
+			<div>
+				<h3>Details for {{ ticker }}:</h3>
+				<ul>
+					<li>Open Price: ${{ open_price }}</li>
+					<li>Close Price: ${{ close_price }}</li>
+					<li>Real Time Price: ${{ realtime_price }}</li>
+				</ul>
+			</div>
+			{% endif %}
+		{% endif %}
+	</div>
+{% endblock %}

@@ -1,0 +1,153 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Backup files # 
+*.bak 
+
+# If you are using PyCharm # 
+.idea/**/workspace.xml 
+.idea/**/tasks.xml 
+.idea/dictionaries 
+.idea/**/dataSources/ 
+.idea/**/dataSources.ids 
+.idea/**/dataSources.xml 
+.idea/**/dataSources.local.xml 
+.idea/**/sqlDataSources.xml 
+.idea/**/dynamic.xml 
+.idea/**/uiDesigner.xml 
+.idea/**/gradle.xml 
+.idea/**/libraries 
+*.iws /out/ 
+
+# Python # 
+*.py[cod] 
+*$py.class 
+
+# Distribution / packaging 
+.Python build/ 
+develop-eggs/ 
+dist/ 
+downloads/ 
+eggs/ 
+.eggs/ 
+lib/ 
+lib64/ 
+parts/ 
+sdist/ 
+var/ 
+wheels/ 
+*.egg-info/ 
+.installed.cfg 
+*.egg 
+*.manifest 
+*.spec 
+
+# Installer logs 
+pip-log.txt 
+pip-delete-this-directory.txt 
+
+# Unit test / coverage reports 
+htmlcov/ 
+.tox/ 
+.coverage 
+.coverage.* 
+.cache 
+.pytest_cache/ 
+nosetests.xml 
+coverage.xml 
+*.cover 
+.hypothesis/ 
+
+# Jupyter Notebook 
+.ipynb_checkpoints 
+
+# pyenv 
+.python-version 
+
+# celery 
+celerybeat-schedule.* 
+
+# SageMath parsed files 
+*.sage.py 
+
+# Environments 
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
+
+# mkdocs documentation 
+/site 
+
+# mypy 
+.mypy_cache/ 
+
+# Sublime Text # 
+*.tmlanguage.cache 
+*.tmPreferences.cache 
+*.stTheme.cache 
+*.sublime-workspace 
+*.sublime-project 
+
+# sftp configuration file 
+sftp-config.json 
+
+# Package control specific files Package 
+Control.last-run 
+Control.ca-list 
+Control.ca-bundle 
+Control.system-ca-bundle 
+GitHub.sublime-settings 
+
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+dev/Scripts/wheel3.exe
+dev/Scripts/wheel.exe
+dev/Scripts/wheel-3.7.exe
+dev/Scripts/vcruntime140.dll
+dev/Scripts/pythonw.exe
+dev/Scripts/python37.dll
+dev/Scripts/python3.dll
+dev/Scripts/python.exe
+dev/Scripts/pip-3.7.exe
+dev/Scripts/libssl-1_1.dll
+dev/Scripts/easy_install.exe
+dev/Scripts/easy_install-3.7.exe
+dev/Scripts/django-admin.py
+dev/Scripts/django-admin.exe
+dev/Scripts/deactivate.bat
+dev/Scripts/chardetect.exe
+dev/Scripts/activate_this.py
+dev/Scripts/activate.ps1
+dev/Scripts/activate.fish
+dev/Scripts/activate.bat
+dev/Scripts/activate
+.vscode/settings.json
+dev/pyvenv.cfg
+dev/Scripts/tk86t.dll
+dev/Scripts/tcl86t.dll
+dev/Scripts/sqlite3.dll
+dev/Scripts/sqlformat.exe
+dev/Scripts/pyjwt.exe
+dev/Scripts/pydoc.bat
+dev/Scripts/pip3.exe
+dev/Scripts/pip.exe
+dev/Scripts/libcrypto-1_1.dll
+dev/Scripts/easy_install3.exe
+dev/Scripts/activate.xsh
+
+@doc
+@doc/*

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block pagescripts %}
+	{% if script is not none %}
+		{{ script | safe }}
+	{% endif %}
+{% endblock %}
+
+{% block title %}Recently Scraped Prices{% endblock %}
+
+{% block body %}
+	{{ div | safe }}
+{% endblock %}

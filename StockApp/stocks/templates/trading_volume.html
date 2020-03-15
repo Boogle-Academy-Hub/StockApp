@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block pagescripts %}
+	{% if script is not none %}
+		{{ script | safe }}
+	{% endif %}
+{% endblock %}
+
+{% block title %}Trading Volume{% endblock %}
+
+{% block body %}
+	<div>
+		<form class="form-inline" action="/trading-volume" method="get">
+			<div class="form-group">
+				<input type="text" name="ticker" placeholder="Stock Ticker" class="form-control mb-2 mr-sm-2" {% if ticker is not none %}value="{{ ticker }}"{% endif %} />
+				<label class="mb-2 mr-sm-2">Range:</label>
+				<select name="range" class="form-control mb-2 mr-sm-2">
+					{% for opt in time_range_options %}
+						<option {% if time_range == opt %}selected{% endif %}>{{ opt }}</option>
+					{% endfor %}
+				</select>
+				<button class="btn btn-primary mb-2">Submit</button>
+			</div>
+		</form>
+	</div>
+
+	{% if time_range is none %}
+		<div class="alert alert-danger" role="alert">Couldn't retrieve data for ticker {{ ticker }}!</div>
+	{% elif div is not none %}
+		{{ div | safe }}
+	{% endif %}
+{% endblock %}
