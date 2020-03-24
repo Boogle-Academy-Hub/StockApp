@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'stocks'
+    'stocks',
+    'news',
+    'django_cron',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +50,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CRON_CLASSES = [
+    # in-quotes your_appname/any_subdirectory/cronjob_name
+    "news.cron.PushCronJob",
 ]
 
 ROOT_URLCONF = 'StockApp.urls'
